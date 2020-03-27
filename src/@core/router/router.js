@@ -22,9 +22,9 @@ export default class Router {
   getInitialRoute() {
     let route = window.location.href.split('/#');
     if (route.length > 1) {
-      this.routeChange(route[1], false);
+      this.routeChange(route[1], true);
     } else {
-      this.routeChange('/', false);
+      this.routeChange('/', true);
     }
   }
 
